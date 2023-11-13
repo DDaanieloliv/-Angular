@@ -1,0 +1,34 @@
+<h1>Angular:</h1>
+
+<br>
+
+<p>O Angular é um framework de desenvolvimento  <br>
+  front-end mantido pelo Google, que simplifica a <br>
+  criação de aplicativos web dinâmicos e robustos por <br>
+  meio do uso de componentes e uma arquitetura baseada <br>
+  em MVVM (Model-View-ViewModel). Ele oferece recursos <br>
+  poderosos, como two-way data binding, injeção de dependência <br>
+  e um conjunto abrangente de ferramentas para facilitar o <br>
+  desenvolvimento de interfaces de usuário interativas e escaláveis.</p>
+
+  <br>
+
+<app-first-component></app-first-component>
+  <!-- Tag do selector:  <app-first-component></app-first-component> -->
+
+  <!-- Ao adicionar essa Tag '<app-first-component></app-first-component>' 
+  ela aparecerá no Link(http://localhost:4200). Ao voce chamar o LiveServer neste aquivo
+  ele não mostrara a o componente da tag  '<app-first-component></app-first-component>'.
+  Somente mostrará no Link correto(http://localhost:4200)-->
+
+  <div> <a href="#"> (Aqui esta sendo empregado o css global pelo 'style.css') </a> </div>
+
+  <app-parent-data [name]="userName" [userData]="userData"></app-parent-data> 
+  <!-- 
+  Sinaliza 'name'  é como eu estou chamando esse dado no 'parent-data'e
+  'userName' é como eu estou chamando ele aqui no meu copmponente pai(app.component)
+  fazendo assim com  que os dados postos em 'parent-data.component.ts' sejam comparilhados 
+  com o componente pai.
+  -->
+
+  <app-directives-test></app-directives-test>
